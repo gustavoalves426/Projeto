@@ -24,27 +24,31 @@ body{
 	border-style: inset;
 	background-color: white;
 }
-.menu{
-	font-size: 15px;
-	background-color: white;
-	width: 150px;
-	border-radius: 1%;
+.menu ul{
 	position: absolute;
-	top: 90px;
-	border-style: inset;
+	top: 83px;
 	height: 1000px;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.menu1{
+.menu ul li{
 	cursor: pointer;
-	font-size: 18px;
-	left: 15px;
-	position: fixed;
-	border-radius: 0px;
-	border-color: gray;
-	border-bottom: 3px solid gray;
-	transition: width 2s;
-	border-width: 1px;
+	font-size: 17.7px;
+	list-style: none;
+	text-decoration: none;
+	background-color: black;
 }
-.menu1:hover {
-  width: 110px;
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+.menu ul li a:hover{
+	background-color: rgb(37, 134, 214);
+}
+*{
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
 }
