@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora</title>		
+		<script src="../script/calculadora.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
+		<link rel="icon" type="image/x-icon" href="../packages/favicon/favicon.png"
+	</head>
+	<body>
+        <nav class="menu">
+			<ul>
+				<li>
+					<a href="Criptomoedas.html">Criptomoedas</a>
+				</li>
+
+				<li><a href="Hardware.html">Hardware</a>
+				</li>
+
+				<li>
+					<a href="Crise.html">Crise</a>
+				</li>
+
+				<li>
+					<a href="NFT.html">NFT</a>
+				</li>
+
+				<li>
+					<a href="Criadores.html">Quem somos</a>
+				</li>
+
+				<li>
+					<a href="calculadora.html">Calculadora</a>
+				</li>
+
+				<li>
+					<a href="../index.html">Página inicial</a>
+				</li>
+			</ul>
+		</nav>
+        <div class="imgcab">
+			<img src="../packages/img/bitcoin.png">
+		</div>
+        <div>
+            <h1 class="calcu">Calculadora</h1>
+            <input type="text" id="txtValor1" size="15" class="calcutext" placeholder="Primeiro valor">
+                <select id="operadores" onchange="ControleDeSelecao();" class="calcu2">
+                    <optgroup label="Basico">
+                        <option value="+">+(somar)</option>
+                        <option value="-">-(subtrair)</option>
+                        <option value="*">*(multiplicar)</option>
+                        <option value="/">/(dividir)</option>
+                    </optgroup>
+                    <optgroup label="Outros">
+                        <option value="raiz">Raiz</option>
+                        <option value="potencia">Potência</option>
+                        <option value="fatorial">Fatorial</option>
+                        <option value="fibonacci">Fibonaci</option>					
+                        <option value="porcento">Porcentagem</option>
+                        <option value="media">Média</option>
+                        <option value="calc">Develop Calc</option>
+                    </optgroup>
+                </select>
+            <input type="text" id="txtValor2" size="15" class="calcutext2" placeholder="Segundo valor"><br>		
+            <input type="button" onclick="Calcular('txtValor1', 'txtValor2')" value="Calcular" class="calcubt">
+            <input type="button" onclick="Limpar('txtValor1', 'txtValor2')" value="Limpar" class="calcubt2">
+            <p id="saida" class="calcuresult">Resultado:</p>	
+        </div>	
+	</body>
+</html>
