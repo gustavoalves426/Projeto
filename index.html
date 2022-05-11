@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" lang="pt-br">
 	<meta http-equiv="Content-Language" content="pt-br">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
 	<link rel="icon" type="image/x-icon" href="packages/favicon/favicon.png"
 </head>
@@ -49,7 +50,38 @@
 			
 						Dentre os atores principais do setor de mineração, a Technavio citou a maior mineradora de bitcoin do mundo, a Bitmain, e outras grandes empresas, como Canaan e Bitfury. Essas empresas fazem parte de um grupo que lidera o fornecimento de dispositivos para mineração.
 					</p>
+					<details>
+						<summary>Grafico</summary>
+						<canvas id="myChart" style="width:100%;max-width:600px" class="grafico"></canvas>
+			
+							<script>
+							var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+							var yValues = [7,8,8,9,9,9,10,11,14,14,19];
+			
+							new Chart("myChart", {
+							type: "line",
+							data: {
+								labels: xValues,
+								datasets: [{
+								fill: false,
+								lineTension: 0,
+								backgroundColor: "rgba(255, 0, 0,2.0)",
+								borderColor: "rgba(255,255,255,0.5)",
+								data: yValues
+								}]
+							},
+							options: {
+								legend: {display: false},
+								scales: {
+								yAxes: [{ticks: {min: 6, max:16}}],
+								}
+							}
+							});
+							</script>
+					</details>
 		</div>
+
+
 
 		
 	</body>
